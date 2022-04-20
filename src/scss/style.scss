@@ -5,8 +5,18 @@
 
 // @import './default.scss';
 // @import "node_modules/bootstrap/scss/bootstrap.scss";
-@import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Clicker+Script&display=swap");
+
+@font-face {
+  font-family: 'Cinzel';
+  src: url('../../assets/fonts/Cinzel-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Clicker Script';
+  src: url('../../assets/fonts/ClickerScript-Regular.ttf') format('truetype');
+}
+
+
 
 html {
   background: url("../../assets/img/bg1.webp") repeat center top fixed;
@@ -988,8 +998,8 @@ html.csstransitions .row > div.animated-active {
   flex: 1 1 auto;
 }
 .services .services-main-info {
-  background: url(https://the-wedding-day.vamtam.com/wp-content/themes/the-wedding-day/wpv_theme/assets/images/frame-time.png) no-repeat;
-  background-image: url(https://the-wedding-day.vamtam.com/wp-content/themes/the-wedding-day/wpv_theme/assets/images/svg/frame-time.svg), none;
+  background: url('../../assets/img/frame-time.webp') no-repeat;
+  background-image: url('../../assets/img/frame-time.svg'), none;
   background-size: contain;
   padding: 20px 30px;
   margin: 0.6em 0;
