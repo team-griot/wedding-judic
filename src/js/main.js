@@ -29,3 +29,6 @@ let x = setInterval(function () {
     document.getElementById("timer-second").innerHTML = '00';
   }
 }, 1000);
+
+
+window.scrollTo(0, document.getElementById("secondSection").scrollHeight);
