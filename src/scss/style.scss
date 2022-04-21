@@ -1006,13 +1006,18 @@ html.csstransitions .row > div.animated-active {
   flex: 1 1 auto;
 }
 .services .services-main-info {
-  background: url("../../assets/img/frame-time.webp") no-repeat;
-  background-image: url("../../assets/img/frame-time.svg"), none;
-  background-size: contain;
-  padding: 20px 30px;
-  margin: 0.6em 0;
-  display: inline-block;
-  min-width: 5em;
+    background: url("../../assets/img/frame-time.webp") no-repeat;
+    background-image: url("../../assets/img/frame-time.svg"), none;
+    background-size: contain;
+    padding: 15px 30px;
+    margin: 0.6em 0;
+    display: inline-block;
+    min-width: 6em !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    line-height: 1.1 !important;
+
+
 }
 ::selection {
   background: #ddd;
@@ -1040,6 +1045,9 @@ html.csstransitions .row > div.animated-active {
   bottom: 0;
   left: 0;
 }
+.counter-wrapper {
+  margin: 0 -60px !important;
+}
 
 // @ilphryn MEDIA QUERY FOR RESPONSIVCE
 
@@ -1058,6 +1066,12 @@ html.csstransitions .row > div.animated-active {
 }
 
 @media (max-width: 479px) {
+  .counter-wrapper {
+    margin: 0 -30px !important;
+  }
+  .wpv-countdown .wpvc-sep {
+    display: none;
+  }
   .responsive-layout .main-menu {
     clear: both;
     float: left;
