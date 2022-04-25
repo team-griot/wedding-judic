@@ -455,7 +455,7 @@ header.main-header .first-row {
 // .page-wrapper > article,
 .page-wrapper > .ajax-result > div
 // .page-wrapper > .ajax-result > article
- {
+{
   padding: 0.019999px 60px 45px;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -890,6 +890,152 @@ img.aligncenter {
   display: block;
   padding: 0 15px;
 }
+.respond-box {
+  position: relative;
+  margin: 10px 0 0;
+  margin-bottom: 0px;
+  padding: 0;
+  border: 3px solid #f1f1f1;
+  border-top: 0;
+}
+
+.cbp-ready::after {
+  display: none;
+  visibility: hidden;
+}
+
+.cbp::after,
+.cbp-lazyload::after,
+.cbp-popup-loadingBox::after,
+.cbp-popup-singlePageInline::after {
+  content: "";
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  -webkit-animation: cbp-rotation 0.8s infinite linear;
+  animation: cbp-rotation 0.8s infinite linear;
+  border-left: 3px solid rgba(114, 144, 182, 0.15);
+  border-right: 3px solid rgba(114, 144, 182, 0.15);
+  border-bottom: 3px solid rgba(114, 144, 182, 0.15);
+  border-top: 3px solid rgba(114, 144, 182, 0.8);
+  border-radius: 100%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 5px 10px;
+  width: 100%;
+  border: 1px solid #ddd;
+  position: relative;
+  outline: none;
+  margin: 0;
+  border-radius: 3px;
+  box-shadow: none !important;
+}
+form {
+  label {
+    text-align: left;
+    width: 100% !important;
+    display: block;
+    font-size: 0.9rem;
+    color: #333;
+    font-weight: 300;
+  }
+  div {
+    margin-bottom: 1rem;
+  }
+  button {
+    border: none;
+    border-radius: 3px;
+    display: inline-block;
+    padding: 6px 18px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #83a88a;
+    color: #ffffff;
+  }
+}
+.container-comment {
+  padding: 0 18rem;
+}
+.cbp-item-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.cbp-wrapper-outer,
+.cbp-wrapper,
+.cbp-wrapper-helper {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.cbp-wrapper-outer {
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+}
+
+.comments .comment .comment-content {
+  padding: 20px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+.comments .no-avatar .comment-content {
+  margin-left: 0;
+}
+.comments .comment-content {
+  position: relative;
+  margin-left: 110px;
+  padding: 0 0 20px;
+  min-height: 40px;
+}
+.comment-time {
+  text-transform: uppercase;
+  display: block;
+}
+.comments .comment-time {
+  display: inline;
+  font-size: 9px !important;
+}
+.comments .comment-time::before {
+  margin: auto 5px;
+  content: " | ";
+}
+.comments .comment-meta > .comment-author-link {
+  font: 300 24px/30px "Clicker Script";
+}
+.comments .comment-meta {
+  margin-top: -3px;
+  margin-bottom: 6px;
+}
 
 #scroll-to-top {
   position: fixed;
@@ -976,14 +1122,6 @@ html.csstransitions .row > div.animated-active {
   display: flex;
   align-items: center;
 }
-.sep-text {
-  position: relative;
-  margin: 0;
-  padding: 20px 0 5px;
-  text-align: center;
-  display: flex;
-  align-items: center;
-}
 .sep-text .sep-text-line {
   display: inline-block;
   padding-top: 2px;
@@ -1007,18 +1145,16 @@ html.csstransitions .row > div.animated-active {
   flex: 1 1 auto;
 }
 .services .services-main-info {
-    background: url("../../assets/img/frame-time.webp") no-repeat;
-    background-image: url("../../assets/img/frame-time.svg"), none;
-    background-size: contain;
-    padding: 15px 30px;
-    margin: 0.6em 0;
-    display: inline-block;
-    min-width: 6em !important;
-    background-repeat: no-repeat !important;
-    background-position: center !important;
-    line-height: 1.1 !important;
-
-
+  background: url("../../assets/img/frame-time.webp") no-repeat;
+  background-image: url("../../assets/img/frame-time.svg"), none;
+  background-size: contain;
+  padding: 15px 30px;
+  margin: 0.6em 0;
+  display: inline-block;
+  min-width: 6em !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  line-height: 1.1 !important;
 }
 ::selection {
   background: #ddd;
@@ -1067,6 +1203,9 @@ html.csstransitions .row > div.animated-active {
 }
 
 @media (max-width: 479px) {
+  .container-comment {
+    padding: 0 1rem;
+  }
   .wpv-countdown .wpvc-sep {
     display: none;
   }
@@ -1144,11 +1283,15 @@ html.csstransitions .row > div.animated-active {
 }
 
 @media (min-width: 700px) and (max-width: 958px) {
+
+  .container-comment {
+    padding: 0 4rem;
+  }
   .responsive-layout .page-wrapper > div,
   .responsive-layout .page-wrapper .row-pad,
   // .responsive-layout .page-wrapper > article,
   .responsive-layout .page-wrapper .ajax-result > div
-  // .responsive-layout .page-wrapper .ajax-result > article 
+  // .responsive-layout .page-wrapper .ajax-result > article
   {
     padding-left: 120px;
     padding-right: 120px;
@@ -1168,6 +1311,10 @@ html.csstransitions .row > div.animated-active {
 }
 
 @media (max-width: 958px) {
+
+  .container-comment {
+    padding: 0 5rem;
+  }
   .responsive-layout #scroll-to-top {
     bottom: 50px;
   }
@@ -1665,7 +1812,7 @@ html.csstransitions .row > div.animated-active {
   // .responsive-layout .page-wrapper > article,
   .responsive-layout .page-wrapper .ajax-result > div
   .responsive-layout .page-wrapper .ajax-result .row-pad
-  // .responsive-layout .page-wrapper .ajax-result > article 
+  // .responsive-layout .page-wrapper .ajax-result > article
   {
     padding-right: 30px;
     padding-left: 30px;
