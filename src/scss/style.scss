@@ -1037,6 +1037,113 @@ form {
   margin-bottom: 6px;
 }
 
+.menu-img-food {
+  background-image: url("../../assets/img/food.jpg");
+  position: absolute;
+  left: 0;
+  border: 1rem solid #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: content-box;
+  height: 48vw;
+  width: 48vw;
+  max-width: 45rem;
+  max-height: 45rem;
+
+  div {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  span {
+    display: block;
+    margin-top: 3rem;
+    margin-left: 2rem;
+    font-size: 5rem;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+.menu-img-cocktail {
+  background-image: url("../../assets/img/cocktail.jpeg");
+  position: absolute;
+  margin-top: 3rem;
+  right: 0;
+  border: 1rem solid #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: content-box;
+  height: 48vw;
+  width: 48vw;
+  max-width: 45rem;
+  max-height: 45rem;
+
+  div {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  span {
+    font-size: 5rem;
+    color: #fff;
+    display: block;
+    margin-bottom: 3rem;
+    margin-left: 2rem;
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+  }
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.blur-hover {
+  background-color: #000;
+  opacity: .3;
+}
+.menu-pg-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-evenly;
+  padding: 5rem 0 10rem 0;
+
+  /*
+  & > * {
+    flex-basis: 30%;
+  }
+  */
+  
+  font-size: 1.1rem;
+  h3 {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+  h6 {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+  .menu-box-item {
+    ul {
+      list-style-type: circle;
+      margin-left: 1rem;
+      li {
+      }
+    }
+  }
+}
+
 #scroll-to-top {
   position: fixed;
   bottom: 0;
@@ -1066,6 +1173,153 @@ form {
   color: #f1f1f1 !important;
   border-radius: 3px 0 0 3px;
   background-clip: padding-box;
+}
+.d-flex {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.programme {
+  .p-date {
+    font-family: Cinzel;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #83a98a;
+    margin: 1rem 0 0.5rem 0;
+    display: inline-block;
+  }
+  p {
+    margin: 1rem 0;
+    line-height: 1.1;
+    font-size: 1.1rem;
+    color: #555;
+  }
+  div {
+    margin-bottom: 1rem;
+  }
+  ul.center {
+    text-align: left;
+    margin-left: 2rem;
+    list-style: circle;
+    li {
+      font-size: 0.9rem;
+      display: flex;
+      align-content: center;
+      align-items: center;
+      justify-content: center;
+      flex-flow: column;
+      text-align: left;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  ul {
+    text-align: left;
+    margin-left: 2rem;
+    list-style: circle;
+    li {
+      font-size: 0.9rem;
+      display: flex;
+      align-content: flex-start;
+      align-items: flex-start;
+      justify-content: center;
+      flex-flow: column;
+      text-align: left;
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+.details-ceremonie {
+  .to-contune-txt {
+    font-family: cinzel;
+    font-size: 1rem;
+    width: 100%;
+    display: inline-block;
+    text-align: right;
+    color: #f06976;
+    font-weight: 500;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  ul {
+    text-align: left;
+    margin-left: 2rem;
+    list-style: circle;
+    li {
+      font-size: 0.9rem;
+      display: flex;
+      align-content: flex-start;
+      align-items: flex-start;
+      justify-content: center;
+      flex-flow: column;
+      text-align: left;
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+ul.timeline {
+  text-align: left;
+  margin-left: 0;
+  list-style: circle;
+  margin: 2rem;
+  li {
+    font-size: 0.9rem;
+    display: flex;
+    align-content: center;
+    align-items: baseline;
+    justify-content: flex-start;
+    flex-flow: row;
+    text-align: left;
+    margin-bottom: 0.5rem;
+    & > :first-child {
+      padding: 0.1rem 0.5rem;
+      border: 1px solid;
+      border-radius: 5px;
+      margin-right: 0.5rem;
+    }
+    & > :last-child {
+      width: max-content;
+    }
+  }
+}
+
+fieldset.list-restriction {
+  padding: 1rem;
+  margin: 2rem 0;
+  border: 2px solid #f06976;
+  border-radius: 5px;
+  p {
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+  }
+}
+
+.programme {
+  // width: max-content;
+  text-align: center;
+}
+
+.programme-wrapper {
+  padding: 2rem;
+  background: url("../../assets/img/bg_pattrn.webp") repeat;
+  background-size: auto;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+.programme-wrapper,
+.details-ceremonie {
+  padding-left: 20%;
+  padding-right: 20%;
 }
 
 .icon,
@@ -1203,6 +1457,34 @@ html.csstransitions .row > div.animated-active {
 }
 
 @media (max-width: 479px) {
+  .menu-img span {
+    font-size: calc(1rem + 10 * (100vw - 240px) / 100);
+    margin-left: calc(1rem + 10 * (100vw - 240px) / 600) !important;
+    margin-bottom: calc(1rem + 10 * (100vw - 240px) / 600) !important;
+    margin-top: calc(1rem + 10 * (100vw - 240px) / 600) !important;
+  }
+
+  header.main-header .second-row .second-row-columns {
+    padding: 0;
+  }
+
+  .menu-pg-wrapper {
+    padding: 0.019999px 60px 45px;
+    margin-bottom: 3rem;
+
+    .menu-box {
+      width: 100%;
+      padding-top: 3rem;
+    }
+  }
+
+
+
+  .programme-wrapper,
+  .details-ceremonie {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
   .container-comment {
     padding: 0 1rem;
   }
@@ -1283,7 +1565,11 @@ html.csstransitions .row > div.animated-active {
 }
 
 @media (min-width: 700px) and (max-width: 958px) {
-
+  .programme-wrapper,
+  .details-ceremonie {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
   .container-comment {
     padding: 0 4rem;
   }
@@ -1311,7 +1597,6 @@ html.csstransitions .row > div.animated-active {
 }
 
 @media (max-width: 958px) {
-
   .container-comment {
     padding: 0 5rem;
   }
@@ -1602,7 +1887,7 @@ html.csstransitions .row > div.animated-active {
 
   .responsive-layout header.main-header #top-nav,
   .responsive-layout header.main-header .second-row {
-    display: none;
+    display: block;
   }
 
   .responsive-layout header.main-header .first-row {
