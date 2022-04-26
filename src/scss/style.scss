@@ -23,6 +23,7 @@ html {
   font: normal 1rem/1.2rem "Droid Sans";
   height: 100%;
   width: 100%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -1007,9 +1008,7 @@ form {
   padding: 20px;
   border: 1px solid #ddd;
   text-align: center;
-}
-.comments .no-avatar .comment-content {
-  margin-left: 0;
+  margin: .5rem;
 }
 .comments .comment-content {
   position: relative;
@@ -1440,6 +1439,17 @@ html.csstransitions .row > div.animated-active {
   width: 100%;
 }
 
+.gestbook-article {
+  padding: .019999px 60px 45px;
+}
+.cbp-wrapper {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  align-content: center;
+  
+}
+
 // @ilphryn MEDIA QUERY FOR RESPONSIVCE
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {
@@ -1457,6 +1467,17 @@ html.csstransitions .row > div.animated-active {
 }
 
 @media (max-width: 479px) {
+
+.gestbook-article {
+  padding: 1rem;
+}
+  .respond-box {
+    border: none !important;
+    padding: 0 1rem;
+  }
+  .container-comment {
+    padding: 0 !important;
+  }
   .menu-img span {
     font-size: calc(1rem + 10 * (100vw - 240px) / 100);
     margin-left: calc(1rem + 10 * (100vw - 240px) / 600) !important;
