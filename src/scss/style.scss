@@ -37,8 +37,7 @@ body {
 
 .row {
   display: inline-flex;
-  width: 100%;
-  width: -moz-available;
+  width: auto;
   display: flex;
   align-content: center;
   flex-wrap: wrap;
@@ -1133,12 +1132,15 @@ form {
   h6 {
     font-size: 1rem;
     margin-top: 1rem;
+    font-weight: 500;
+    color: #666;
   }
   .menu-box-item {
     ul {
       list-style-type: circle;
       margin-left: 1rem;
       li {
+    font-size: 1rem;
       }
     }
   }
