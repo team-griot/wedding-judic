@@ -1007,6 +1007,8 @@ form {
 }
 
 .comment-zone {
+  z-index: 11111111;
+position: relative;
 
   &:before {
     content: ' ';
