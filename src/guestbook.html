@@ -20,8 +20,8 @@
                     <div class="logo-wrapper">
                         <a href="https://mariage-judic-et-prisc.com" title="Nick &amp; Sarah" class="logo">
                             <img src="../assets/img/Logo.webp" alt="Judicaël &amp; Prisca" class="hide-hidpi" />
-                            <img src="../assets/img/Logo2x.webp" alt="Judicaël &amp; Prisca"
-                                class="show-hidpi-inline" height="112" />
+                            <img src="../assets/img/Logo2x.webp" alt="Judicaël &amp; Prisca" class="show-hidpi-inline"
+                                height="112" />
                         </a>
                         <div class="clearboth"></div>
                         <a href="https://mariage-judic-et-prisc.com" title="Nick &amp; Sarah"
@@ -45,8 +45,8 @@
                                         <div class="menu-main-menu-container">
                                             <ul id="menu-main-menu" class="menu" style="display: block; height: 0px;">
                                                 <li id="menu-item-6682"
-                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6682">
-                                                <a href="./index.html">Home</a></li>
+                                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6682">
+                                                    <a href="./index.html">Home</a></li>
                                                 <li id="menu-item-6682"
                                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6682">
                                                     <a href="./programme.html">PROGRAMME</a></li>
@@ -105,7 +105,7 @@
                                                     </div>
 
                                                     <div id="comments">
-                                                        <div class="respond-box">
+                                                        <div class="respond-box comment-zone">
                                                             <div class="respond-box-title sep-text">
                                                                 <div class="sep-text-before">
                                                                     <div class="sep-text-line"></div>
@@ -118,35 +118,46 @@
                                                                 </div>
                                                             </div>
 
-                                                            <div class="container-comment" style="">
-                                                                <form action="action_page.php">
+                                                            <div class="container-comment" style="padding: 2rem 0 !important;">
+                                                                <form id="comment-form">
                                                                     <div>
-                                                                  <label for="fname">Votre Nom (requis)</label>
-                                                                  <input type="text" id="fname" name="firstname" placeholder="nom..">
-                                                                </div>
-                                                                <div>
-                                                                  <label for="lname">Votre Prénom (requis)</label>
-                                                                  <input type="text" id="lname" name="lastname" placeholder="prénom..">
-                                                                </div>
-                                                                <div>
-                                                                  <label for="subject">Votre Message (requis)</label>
-                                                                  <textarea id="subject" name="subject" placeholder="Écrivez quelque chose.." rows="8"></textarea>
-                                                                </div>
-                                                                <div>
-                                                                 <div>
-                                                                    <button type="submit" value="Submit">Envoyez</button>
-                                                                 </div>
+                                                                        <label for="fname">Votre Nom (requis)</label>
+                                                                        <input type="text" id="fieldNom" name="fieldNom"
+                                                                            placeholder="nom..">
+                                                                    </div>
+                                                                    <div>
+                                                                        <label for="lname">Votre Prénom (requis)</label>
+                                                                        <input type="text" id="fieldPrenom"
+                                                                            name="fieldPrenom" placeholder="prénom..">
+                                                                    </div>
+                                                                    <div>
+                                                                        <label for="subject">Votre Message
+                                                                            (requis)</label>
+                                                                        <textarea id="fieldMsg" name="fieldMsg"
+                                                                            placeholder="Écrivez quelque chose.."
+                                                                            rows="8"></textarea>
+                                                                    </div>
+                                                                    <div>
+                                                                        <div class="form-btn">
+                                                                            <button type="button" id="submitBtn">Envoyez
+                                                                                mon message</button>
+                                                                        </div>
                                                                 </form>
-                                                              </div> 
+                                                                <div id="notif-success" class="notif-msg hide">
+                                                                    <h3>Merci !</h3>
+                                                                    <p>Votre message a été envoyé avec succès.</p>
+                                                                </div>
+                                                            </div>
+
                                                         </div>
                                                         <div class="sep-text centered">
                                                             <span class="sep-text-before">
                                                                 <div class="sep-text-line"></div>
                                                             </span>
                                                             <div class="content">
-                                                                <h5 style="margin: 2rem 0 !important;"><span class="comment-word"
-                                                                        style="font-size: 1.4rem;font-weight: 700 !important;">06
-                                                                        Messages</span>
+                                                                <h5 style="margin: 2rem 0 !important;"><span
+                                                                        class="comment-word"
+                                                                        style="font-size: 1.4rem;font-weight: 700 !important;">Messages</span>
                                                                 </h5>
                                                             </div>
                                                             <span class="sep-text-after">
@@ -159,229 +170,13 @@
                                                             data-options="{&quot;layoutMode&quot;:&quot;grid&quot;,&quot;sortToPreventGaps&quot;:true,&quot;defaultFilter&quot;:&quot;*&quot;,&quot;animationType&quot;:&quot;quicksand&quot;,&quot;gapHorizontal&quot;:30,&quot;gapVertical&quot;:30,&quot;gridAdjustment&quot;:&quot;responsive&quot;,&quot;mediaQueries&quot;:[{&quot;width&quot;:712.5,&quot;cols&quot;:3},{&quot;width&quot;:465,&quot;cols&quot;:2},{&quot;width&quot;:217.5,&quot;cols&quot;:1}],&quot;displayType&quot;:&quot;bottomToTop&quot;,&quot;displayTypeSpeed&quot;:100}"
                                                             style="padding-bottom: 2rem;">
                                                             <div class="cbp-wrapper-outer">
-                                                                <div class="cbp-wrapper">
-                                                                    <!-- style="display: grid;grid-auto-columns: max-content;grid-auto-flow: row;grid-gap: 2rem;grid-template-rows: auto;grid-template-columns: 1fr 1fr 1fr;justify-content: center;justify-items: center;"> -->
-                                                                    <div id="comment-17738"
-                                                                        class="comment even thread-even depth-1 cbp-item clearfix no-avatar"
-                                                                        style="width: 340px; left: 0px; top: 0px;">
-                                                                        <div class="cbp-item-wrapper">
-                                                                            <div class="comment-content">
-                                                                                <div class="comment-meta">
-                                                                                    <h4 class="comment-author-link"
-                                                                                        style="font-weight: 600;">Chris Hemsworth</h4>
-                                                                                    <h6 style="font-size: .8rem !important;
-                                                                            color: #666; font-weight: 600 !important;">
-                                                                                        01 Mai 2022 10:26</h6>
-                                                                                </div>
-                                                                                <p
-                                                                                    style="font-size: 1rem;font-weight: 300;">
-                                                                                    Lorem ipsum dolor sit amet,
-                                                                                    consectetur adipiscing elit. Quisque
-                                                                                    scelerisque volutpat tellus, a
-                                                                                    accumsan purus facilisis dignissim.
-                                                                                    Cras iaculis felis nisl, non
-                                                                                    imperdiet sapien tincidunt eu.
-                                                                                    Integer viverra ut ex id
-                                                                                    consectetur. Mauris ac ante id sem
-                                                                                    posuere feugiat. Proin odio dui,
-                                                                                    lacinia eu blandit a, fermentum at
-                                                                                    ex. Sed id turpis ultricies,
-                                                                                    eleifend ligula at, consectetur
-                                                                                    massa. Morbi nisi lorem, vehicula
-                                                                                    vel mattis id, interdum ac risus.
-                                                                                    Praesent lobortis ligula tortor, et
-                                                                                    iaculis turpis efficitur quis. Cras
-                                                                                    tristique scelerisque mauris tempor
-                                                                                    commodo. Duis molestie posuere
-                                                                                    turpis duis. </p>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div id="comment-17738"
-                                                                        class="comment even thread-even depth-1 cbp-item clearfix no-avatar"
-                                                                        style="width: 340px; left: 0px; top: 0px;">
-                                                                        <div class="cbp-item-wrapper">
-                                                                            <div class="comment-content">
-                                                                                <div class="comment-meta">
-                                                                                    <h4 class="comment-author-link"
-                                                                                        style="font-weight: 600;">Billy Eleish</h4>
-                                                                                    <h6 style="font-size: .8rem !important;
-                                                                            color: #666; font-weight: 600 !important;">
-                                                                                        01 Mai 2022 10:26</h6>
-                                                                                </div>
-                                                                                <p
-                                                                                    style="font-size: 1rem;font-weight: 300;">
-                                                                                    Lorem ipsum dolor sit amet,
-                                                                                    consectetur adipiscing elit. Quisque
-                                                                                    scelerisque volutpat tellus, a
-                                                                                    accumsan purus facilisis dignissim.
-                                                                                    Cras iaculis felis nisl, non
-                                                                                    imperdiet sapien tincidunt eu.
-                                                                                    Integer viverra ut ex id
-                                                                                    consectetur. Mauris ac ante id sem
-                                                                                    posuere feugiat. Proin odio dui,
-                                                                                    lacinia eu blandit a, fermentum at
-                                                                                    ex. Sed id turpis ultricies,
-                                                                                    eleifend ligula at, consectetur
-                                                                                    massa. Morbi nisi lorem, vehicula
-                                                                                    vel mattis id, interdum ac risus.
-                                                                                    Praesent lobortis ligula tortor, et
-                                                                                    iaculis turpis efficitur quis. Cras
-                                                                                    tristique scelerisque mauris tempor
-                                                                                    commodo. Duis molestie posuere
-                                                                                    turpis duis. </p>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div id="comment-17738"
-                                                                        class="comment even thread-even depth-1 cbp-item clearfix no-avatar"
-                                                                        style="width: 340px; left: 0px; top: 0px;">
-                                                                        <div class="cbp-item-wrapper">
-                                                                            <div class="comment-content">
-                                                                                <div class="comment-meta">
-                                                                                    <h4 class="comment-author-link"
-                                                                                        style="font-weight: 600;">John Wick</h4>
-                                                                                    <h6 style="font-size: .8rem !important;
-                                                                            color: #666; font-weight: 600 !important;">
-                                                                                        01 Mai 2022 10:26</h6>
-                                                                                </div>
-                                                                                <p
-                                                                                    style="font-size: 1rem;font-weight: 300;">
-                                                                                    Lorem ipsum dolor sit amet,
-                                                                                    consectetur adipiscing elit. Quisque
-                                                                                    scelerisque volutpat tellus, a
-                                                                                    accumsan purus facilisis dignissim.
-                                                                                    Cras iaculis felis nisl, non
-                                                                                    imperdiet sapien tincidunt eu.
-                                                                                    Integer viverra ut ex id
-                                                                                    consectetur. Mauris ac ante id sem
-                                                                                    posuere feugiat. Proin odio dui,
-                                                                                    lacinia eu blandit a, fermentum at
-                                                                                    ex. Sed id turpis ultricies,
-                                                                                    eleifend ligula at, consectetur
-                                                                                    massa. Morbi nisi lorem, vehicula
-                                                                                    vel mattis id, interdum ac risus.
-                                                                                    Praesent lobortis ligula tortor, et
-                                                                                    iaculis turpis efficitur quis. Cras
-                                                                                    tristique scelerisque mauris tempor
-                                                                                    commodo. Duis molestie posuere
-                                                                                    turpis duis. </p>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div id="comment-17738"
-                                                                        class="comment even thread-even depth-1 cbp-item clearfix no-avatar"
-                                                                        style="width: 340px; left: 0px; top: 0px;">
-                                                                        <div class="cbp-item-wrapper">
-                                                                            <div class="comment-content">
-                                                                                <div class="comment-meta">
-                                                                                    <h4 class="comment-author-link"
-                                                                                        style="font-weight: 600;">Samuel L Jackson</h4>
-                                                                                    <h6 style="font-size: .8rem !important;
-                                                                            color: #666; font-weight: 600 !important;">
-                                                                                        01 Mai 2022 10:26</h6>
-                                                                                </div>
-                                                                                <p
-                                                                                    style="font-size: 1rem;font-weight: 300;">
-                                                                                    Lorem ipsum dolor sit amet,
-                                                                                    consectetur adipiscing elit. Quisque
-                                                                                    scelerisque volutpat tellus, a
-                                                                                    accumsan purus facilisis dignissim.
-                                                                                    Cras iaculis felis nisl, non
-                                                                                    imperdiet sapien tincidunt eu.
-                                                                                    Integer viverra ut ex id
-                                                                                    consectetur. Mauris ac ante id sem
-                                                                                    posuere feugiat. Proin odio dui,
-                                                                                    lacinia eu blandit a, fermentum at
-                                                                                    ex. Sed id turpis ultricies,
-                                                                                    eleifend ligula at, consectetur
-                                                                                    massa. Morbi nisi lorem, vehicula
-                                                                                    vel mattis id, interdum ac risus.
-                                                                                    Praesent lobortis ligula tortor, et
-                                                                                    iaculis turpis efficitur quis. Cras
-                                                                                    tristique scelerisque mauris tempor
-                                                                                    commodo. Duis molestie posuere
-                                                                                    turpis duis. </p>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div id="comment-17738"
-                                                                        class="comment even thread-even depth-1 cbp-item clearfix no-avatar"
-                                                                        style="width: 340px; left: 0px; top: 0px;">
-                                                                        <div class="cbp-item-wrapper">
-                                                                            <div class="comment-content">
-                                                                                <div class="comment-meta">
-                                                                                    <h4 class="comment-author-link"
-                                                                                        style="font-weight: 600;">Henry Cavill</h4>
-                                                                                    <h6 style="font-size: .8rem !important;
-                                                                            color: #666; font-weight: 600 !important;">
-                                                                                        01 Mai 2022 10:26</h6>
-                                                                                </div>
-                                                                                <p
-                                                                                    style="font-size: 1rem;font-weight: 300;">
-                                                                                    Lorem ipsum dolor sit amet,
-                                                                                    consectetur adipiscing elit. Quisque
-                                                                                    scelerisque volutpat tellus, a
-                                                                                    accumsan purus facilisis dignissim.
-                                                                                    Cras iaculis felis nisl, non
-                                                                                    imperdiet sapien tincidunt eu.
-                                                                                    Integer viverra ut ex id
-                                                                                    consectetur. Mauris ac ante id sem
-                                                                                    posuere feugiat. Proin odio dui,
-                                                                                    lacinia eu blandit a, fermentum at
-                                                                                    ex. Sed id turpis ultricies,
-                                                                                    eleifend ligula at, consectetur
-                                                                                    massa. Morbi nisi lorem, vehicula
-                                                                                    vel mattis id, interdum ac risus.
-                                                                                    Praesent lobortis ligula tortor, et
-                                                                                    iaculis turpis efficitur quis. Cras
-                                                                                    tristique scelerisque mauris tempor
-                                                                                    commodo. Duis molestie posuere
-                                                                                    turpis duis. </p>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div id="comment-17738"
-                                                                        class="comment even thread-even depth-1 cbp-item clearfix no-avatar"
-                                                                        style="width: 340px; left: 0px; top: 0px;">
-                                                                        <div class="cbp-item-wrapper">
-                                                                            <div class="comment-content">
-                                                                                <div class="comment-meta">
-                                                                                    <h4 class="comment-author-link"
-                                                                                        style="font-weight: 600;">Robert Downey Jr.</h4>
-                                                                                    <h6 style="font-size: .8rem !important;
-                                                                            color: #666; font-weight: 600 !important;">
-                                                                                        01 Mai 2022 10:26</h6>
-                                                                                </div>
-                                                                                <p
-                                                                                    style="font-size: 1rem;font-weight: 300;">
-                                                                                    Lorem ipsum dolor sit amet,
-                                                                                    consectetur adipiscing elit. Quisque
-                                                                                    scelerisque volutpat tellus, a
-                                                                                    accumsan purus facilisis dignissim.
-                                                                                    Cras iaculis felis nisl, non
-                                                                                    imperdiet sapien tincidunt eu.
-                                                                                    Integer viverra ut ex id
-                                                                                    consectetur. Mauris ac ante id sem
-                                                                                    posuere feugiat. Proin odio dui,
-                                                                                    lacinia eu blandit a, fermentum at
-                                                                                    ex. Sed id turpis ultricies,
-                                                                                    eleifend ligula at, consectetur
-                                                                                    massa. Morbi nisi lorem, vehicula
-                                                                                    vel mattis id, interdum ac risus.
-                                                                                    Praesent lobortis ligula tortor, et
-                                                                                    iaculis turpis efficitur quis. Cras
-                                                                                    tristique scelerisque mauris tempor
-                                                                                    commodo. Duis molestie posuere
-                                                                                    turpis duis. </p>
-                                                                            </div>
-                                                                        </div>
+                                                                <div class="cbp-wrapper" id="comment-wrapper">
+                                                                    <div id="no-msg" class="hide">Pas de message publié
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-
                                                 </article>
                                             </div>
                                         </div>
