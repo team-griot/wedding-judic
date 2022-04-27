@@ -46,7 +46,7 @@ if (window.location.pathname === "/guestbook.html") {
       //
       const author = document.createElement("h4");
       author.classList.add("comment-author-link");
-      author.innerHTML = titleCase(`${doc.data().nom} ${doc.data().prenom}`);
+      author.innerHTML = titleCase(`${doc.data().prenom} ${doc.data().nom}`);
       //
       const date = document.createElement("h6");
       date.classList.add("comment-date");
