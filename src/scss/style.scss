@@ -1008,10 +1008,15 @@ form {
 
 .comment-zone {
   z-index: 11111111;
-position: relative;
+  position: relative;
+
+  #comment-form {
+    z-index: 21212122;
+    position: relative;
+  }
 
   &:before {
-    content: ' ';
+    content: " ";
     display: block;
     position: absolute;
     left: 0;
@@ -1020,11 +1025,11 @@ position: relative;
     height: 100%;
     z-index: 1;
     opacity: 0.08;
-    background-image: url('../../assets/img/comment_bg.jpg');
+    background-image: url("../../assets/img/comment_bg.jpg");
     background-size: cover;
     background-position-x: center;
     background-repeat: no-repeat;
-}
+  }
 }
 
 .comments .comment .comment-content {
@@ -1084,21 +1089,20 @@ position: relative;
   border: 3px solid #f1f1f1;
   border-top: 0;
   min-height: 30vh;
-    h3 {
-      font-size: 1.5rem;
-      font-weight: 600;
-      margin-bottom: 1rem;
-      text-align: center;
-      color: #83a88a;
-    }
-    p {
-      font-size: 1rem;
-      font-weight: 300;
-      margin-bottom: 2rem;
-      text-align: center;
-    }
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #83a88a;
+  }
+  p {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
 }
-
 
 .menu-img-food {
   background-image: url("../../assets/img/food.jpg");
